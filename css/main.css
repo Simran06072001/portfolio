@@ -1,4 +1,42 @@
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 768px) {
 
+nav {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+header h1 {
+    font-size: 32px;
+}
+
+header p {
+    font-size: 16px;
+}
+
+.about {
+    flex-direction: column;
+    text-align: center;
+}
+
+.about img {
+    width: 180px;
+    height: 180px;
+}
+
+.cards {
+    grid-template-columns: 1fr;
+}
+
+section {
+    padding: 50px 5%;
+}
+
+.title {
+    font-size: 28px;
+}
+}
 *{
 margin:0;
 padding:0;
