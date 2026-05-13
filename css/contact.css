@@ -1,0 +1,17 @@
+/* CONTACT */
+.contact{
+text-align:center;
+background:#111;
+padding:30px;
+border-radius:15px;
+}
+
+.contact p{
+font-size:18px;
+margin:10px 0;
+}
+
+.contact i{
+color:rgb(196,20,163);
+margin-right:8px;
+}
