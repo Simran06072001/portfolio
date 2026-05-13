@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="nl">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Simran Portfolio</title>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-<style>
 *{
 margin:0;
 padding:0;
@@ -74,7 +65,6 @@ opacity:0.8;
 /* SECTIONS ANIMATION */
 section{
 padding:80px 10%;
-opacity:0;
 transform:translateY(50px);
 transition:0.8s ease;
 }
@@ -181,120 +171,3 @@ background:#111;
 margin-top:40px;
 opacity:0.8;
 }
-</style>
-</head>
-
-<body>
-
-<!-- NAVBAR -->
-<nav>
-<a href="#home">Home</a>
-<a href="#about">Over mij</a>
-<a href="#skills">Skills</a>
-<a href="#hobbies">Hobby's</a>
-<a href="#work">Werkervaring</a>
-<a href="#contact">Contact</a>
-</nav>
-
-<!-- HEADER -->
-<header id="home">
-<h1>Simran Sewpal</h1>
-<p>ICT Student | Bedrijfskundige Informatica</p>
-</header>
-
-<!-- ABOUT -->
-<section id="about">
-<h2 class="title">Over Mij</h2>
-
-<div class="about">
-<img src="img/foto.jpg" alt="profielfoto">
-
-<div class="text">
-Ik ben Simran Sewpal, student ICT met richting Bedrijfskundige Informatica.  
-Ik ben leergierig, professioneel en klantgericht.
-</div>
-</div>
-</section>
-
-<!-- SKILLS -->
-<section id="skills">
-<h2 class="title">Skills</h2>
-
-<div class="cards">
-<div class="card">
-<i class="fa-solid fa-file-word"></i>
-<h3>Microsoft Word</h3>
-</div>
-
-<div class="card">
-<i class="fa-solid fa-file-excel"></i>
-<h3>Microsoft Excel</h3>
-</div>
-</div>
-</section>
-
-<!-- HOBBIES -->
-<section id="hobbies">
-<h2 class="title">Hobby's</h2>
-
-<div class="cards">
-<div class="card">
-<i class="fa-solid fa-person-swimming"></i>
-<h3>Zwemmen</h3>
-</div>
-
-<div class="card">
-<i class="fa-solid fa-book-open"></i>
-<h3>Lezen</h3>
-</div>
-</div>
-</section>
-
-<!-- WORK -->
-<section id="work">
-<h2 class="title">Werkervaring</h2>
-
-<div class="work">
-<h3><i class="fa-solid fa-briefcase"></i> Customer Support Officer</h3>
-<p>Finabank NV</p>
-<img src="img/finabank.png" alt="Finabank logo">
-</div>
-
-<div class="work">
-<h3><i class="fa-solid fa-headset"></i> Call Agent</h3>
-<p>Yource</p>
-</div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact">
-<h2 class="title">Contact</h2>
-
-<div class="contact">
-<p><i class="fa-solid fa-phone"></i> 8223722</p>
-<p><i class="fa-solid fa-envelope"></i> sewpalsimran@gmail.com</p>
-</div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-© 2026 Simran Sewpal
-</footer>
-
-<!-- SCROLL ANIMATIE -->
-<script>
-const sections = document.querySelectorAll("section");
-
-const observer = new IntersectionObserver(entries => {
-entries.forEach(entry => {
-if(entry.isIntersecting){
-entry.target.classList.add("show");
-}
-});
-},{threshold:0.15});
-
-sections.forEach(sec => observer.observe(sec));
-</script>
-
-</body>
-</html>
