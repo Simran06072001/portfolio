@@ -225,3 +225,14 @@ section{
 padding:50px 5%;
 }
 }
+.intro-title{
+color:rgb(196,20,163);
+margin-bottom:10px;
+margin-top:15px;
+font-size:30px;
+}
+.quote{
+opacity:0.8;
+font-style:italic;
+margin-top:10px;
+}
